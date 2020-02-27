@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="no"?> 
+<?xml-stylesheet type="text/xsl" href="movies.xsl"?> 
+<!DOCTYPE movies SYSTEM "movies.dtd">
+
+<movies>
+
+  <movie>
+    <title lang="en">Birdman</title>
+    <site>http://www.birdmanthemovie.com</site>
+    <poster src="http://content8.flixster.com/movie/11/18/07/11180774_det.jpg"/>
+    <release-date><year>2014</year> <month>10</month> <day>17</day></release-date>
+    <genre>comedy</genre>
+    <actor>Michael Keaton</actor>
+    <director>Alejandro González Iñárritu</director>
+    <actor>Edward Norton</actor>
+    <actor>Emma Stone</actor>
+    <actor>Naomi Watts</actor>
+    <actor>Zach Galifianakis</actor>
+    <runtime>121</runtime>
+    <mpaa>
+      <rating>R</rating>
+      <reason><category>language</category><duration>throughout</duration></reason>
+      <reason><category>sexual content</category><duration>some</duration></reason>
+      <reason><category>violence</category><duration>brief</duration></reason>
+    </mpaa>
+    <studio>Fox Searchlight</studio>
+    <reviews>
+      <review>
+        <reviewer>Andy Crump</reviewer>
+        <text>Above all else, Birdman is tender, raucously funny and deeply tragic.</text>
+        <score out-of="10">8.9</score>
+      </review>
+      <review>
+        <reviewer>Rotten Tomatoes</reviewer>
+        <score out-of="100">94</score>
+      </review>
+    </reviews>
+  </movie>
+  
+  <movie>
+    <title lang="german">Metropolis</title>
+    <poster src="http://content8.flixster.com/movie/10/93/38/10933866_det.jpg"/>
+    <release-date><year>1927</year> <month>4</month> <day>13</day></release-date>
+    <director>Fritz Lang</director>
+    <genre>art-house</genre>
+    <genre>science fiction</genre>
+    <runtime>115</runtime>
+    <actor>Gustav Fröhlich</actor>
+    <actor>Brigitte Helm</actor>
+    <reviews>
+      <review>
+        <reviewer>Jonathan Romney</reviewer>
+        <text>Is Fritz Lang's 1927 epic Metropolis the most influential film ever? 
+        It certainly spawned the cinema of futurism, and watching it today it's uncanny to see 
+        how many shadows of cinema yet to come it already contains.</text>
+      </review>
+    </reviews>
+  </movie>
+
+  <movie>
+    <title lang="en">The Hunger Games: Mockingjay Part I</title>
+    <poster src="http://content8.flixster.com/movie/11/18/04/11180474_det.jpg"/>
+    <release-date><year>2014</year> <month>11</month> <day>21</day></release-date>
+    <genre>action</genre>
+    <genre>science fiction</genre>
+    <actor>Jennifer Lawrence</actor>
+    <actor>Julianne Moore</actor>
+    <actor>Woody Harrelson</actor>
+    <actor>Donald Sutherland</actor>
+    <director>Francis Lawrence</director>
+    <studio>Lionsgate Films
+      <site>lionsgate.com/movies</site>
+    </studio>
+    <mpaa>
+      <rating>PG-13</rating>
+      <reason><category>disturbing images</category></reason>
+      <reason><category>action</category></reason>
+      <reason><category>violence</category></reason>
+    </mpaa>
+    <runtime>125</runtime>
+    <reviews>
+      <review>
+        <reviewer>Wesley Morris</reviewer>
+        <text>Mockingjay has more exposition than a TED Talk, more rubble than a decade of The Flintstones, 
+        and absolutely no nonmonetary reason to be Part 1 of anything. It isn't storytelling. It's a filibuster.
+        </text>
+        <score out-of="5">3</score>
+      </review>
+      <review>
+        <reviewer>RottenTomatoes</reviewer>
+        <score out-of="100">66</score>
+      </review>
+    </reviews>
+  </movie>
+
+
+</movies>
