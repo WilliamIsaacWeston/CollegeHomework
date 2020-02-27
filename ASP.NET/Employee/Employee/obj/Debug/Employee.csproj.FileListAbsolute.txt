@@ -1,0 +1,9 @@
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\bin\Debug\Employee.exe.config
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\bin\Debug\Employee.exe
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\bin\Debug\Employee.pdb
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\obj\Debug\Employee.csprojResolveAssemblyReference.cache
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\obj\Debug\Employee.MainWindow.resources
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\obj\Debug\Employee.Properties.Resources.resources
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\obj\Debug\Employee.csproj.GenerateResource.Cache
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\obj\Debug\Employee.exe
+c:\users\isaac\documents\visual studio 2013\Projects\Employee\Employee\obj\Debug\Employee.pdb

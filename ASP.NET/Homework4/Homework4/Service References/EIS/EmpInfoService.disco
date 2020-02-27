@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://itec-web-dev02.radford.edu/fds/EmpInfoService.asmx?wsdl" docRef="http://itec-web-dev02.radford.edu/fds/EmpInfoService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://itec-web-dev02.radford.edu/fds/EmpInfoService.asmx" xmlns:q1="http://www.radford.edu/EWS" binding="q1:EmpInfoServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://itec-web-dev02.radford.edu/fds/EmpInfoService.asmx" xmlns:q2="http://www.radford.edu/EWS" binding="q2:EmpInfoServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

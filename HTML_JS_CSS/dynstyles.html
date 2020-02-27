@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+    dynstyles.html
+    Isaac Weston
+    Assignment 5 - Demonstraits further use of dynamic HTML by displaying a series of
+      input fields and buttons that can alter the contents and layout of the document.
+  -->
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- CCS properties set inital document layout -->
+    <style type="text/css">
+      div#d1 {position:relative;
+              border-color:red;
+              border-style:solid;
+              border-width:10px;
+              padding:10px;
+              background-color:#D3D3D3;
+              font-weight:normal;
+              width:50%;}
+      td,th  {padding:0.5em;}
+    </style>
+
+    <!-- JavaScript functions determin the function of forum buttons and
+           sets what happens when text fields are altered -->
+    <script type="text/javascript" >
+      <!--
+      // runs the initPage() function as soon as the page loads or reloads
+      window.onload = initPage;
+
+      /**
+      * initPage() resets the form input values.
+      */
+      function initPage()
+      {
+        document.forms[0].reset();
+      }
+      
+      /**
+      * movedown() moves the contents of the "d1" div tag down the page by 50 pixels.
+      */
+      function movedown()
+      {
+        // references to the div element and it's "top" property
+        d = document.getElementById("d1");
+        y = d.style.top;
+
+        // checks to make sure the "top" property has an inital value
+        if (!y)
+          y="0px";
+
+        // gets the current posistion of the element
+        pix = parseInt(y);
+
+        // sets the "top" property to 50px more than the current value
+        d.style.top = (pix + 50) + "px";
+      }
+
+      /**
+      * newPtext() prompts the user for String input, then replaces the contents
+      * of the "contentpara" paragraph element with the input String.
+      */
+      function newPtext()
+      {
+        // reference to the paragraph element       
+        content = document.getElementById("contentpara");
+
+        // prompts for user input and stores it
+        newContent = window.prompt("Enter the new contents for the paragraph: ");
+
+        // replaces the contents of the paragraph with the input
+        content.innerHTML = newContent;
+      }
+       
+      /**
+      * newHtext() prompts the user for String input, then replaces the contents
+      * of the "contenthead" header element with the input String.
+      */
+      function newHtext()
+      {
+        // reference to the header element  
+        content = document.getElementById("contenthead");
+
+        // prompts for user input and stores it
+        newContent = window.prompt("Enter the new contents for the header: ");
+
+        // replaces the contents of the header with the input
+        content.innerHTML = newContent;
+      }
+
+      /**
+      * fontszchg() changes the font size of the text inside the "d1" div tag to 
+      * the value of the "fontsz1" text field (must specify units).
+      */
+      function fontszchg()
+      {
+        // reference to the div element
+        d = document.getElementById("d1");
+
+        // reference to the value of the text field
+        newFontSize = document.getElementById("fontsz1").value;
+
+        // sets the "font-size" property to the input vlaue
+        d.style.fontSize = newFontSize;
+      }
+
+      /**
+      * fontszchg() changes the background color of the "d1" div tag to the value 
+      * of the "bcol" text field.
+      */
+      function bcolchg()
+      {
+        // reference to the div element
+        d = document.getElementById("d1");
+
+        // reference to the value of the text field
+        newBGColor = document.getElementById("bcol").value;
+
+        // sets the "background-color" property to the input vlaue
+        d.style.backgroundColor = newBGColor;
+      }
+      // -->
+    </script>
+  </head>
+  <body>
+    <!-- A table of forum fields and buttons for user input -->
+    <div id="choices">
+      <form action="" method="post">
+        <h2>Dynamic HTML Page</h2>
+        <table border="border">
+          <!-- A button that will allow for new text for the group's paragraph -->
+          <tr>
+            <td>Enter new paragraph text.</td>
+            <th> 
+              <input type="button" value="New P Text"  onclick = "newPtext()"/>
+            </th>
+          </tr>
+          <!-- A button that will allow for new text for the group's heading -->
+          <tr>
+            <td>Enter new heading text. </td>
+            <th>
+              <input type="button" value="New H Text" onclick="newHtext()" />
+            </th>
+          </tr>
+          <!-- A text field that will alter the background color of the elements group -->
+          <tr>
+            <td>Background color: </td>
+            <td>
+              <input type="text" size="10" maxlength="10" name="bcol" id="bcol"
+                      onchange = "bcolchg()"    />
+            </td>
+          </tr>
+          <!-- A text field that will alter the font size of the elements group -->
+          <tr>
+            <td>Font Size: </td>
+            <td>
+              <input type="text" size="10" maxlength="10" name="fontsz1" id="fontsz1" 
+                      onchange = "fontszchg()"/>
+            </td>
+          </tr>
+          <!-- A button that will move the elements group 50 pixels down the page -->
+          <tr>
+            <td>Change Top Value (50px)</td>
+            <td>
+              <input type="button" value="Move Down" onclick="movedown()" />
+            </td>
+          </tr>
+          <!-- A button that will reset the form -->
+          <tr>
+            <td>Reset Form</td>
+            <td>
+              <input type="reset" value="Reset Form" />
+            </td>
+          </tr> 
+        </table>   
+      </form>     
+    </div>
+
+    <!-- The group of elements that may be altered by above form -->
+    <div id="d1">
+      <h3 id="contenthead">ITEC 225</h3>
+      <p id="contentpara">
+        Web Programming I, the main topics are HTML, CSS, Javascript, and an introduction 
+          to PHP.
+      </p>
+    </div>
+    
+  </body>
+</html>
+

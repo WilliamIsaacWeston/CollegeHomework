@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    js1.html
+    an example of js use in html
+  -->
+  <head>
+    <meta charset="utf-8" />
+    <title>First Javascript</title>
+  </head>
+  <body>
+    <h1>First Javascript</h1>
+    <p>We can embed javascript programs in the body of an html document.</p>
+    <script type="text/javascript">
+      var a = "ABCDE";
+      var b = "XYZ";
+
+      len = a.length;
+      alert("a length = " + len);
+      pos = a.indexOf("C");
+      alert("pos = " + pos);
+      char = a.charAt(2);
+      alert("char = " + char);
+      newstr = a.substr(1,3);
+      alert("newstr = " + newstr);
+    </script>
+    <h2>Heading after javascript.</h2>
+  </body>
+</html>

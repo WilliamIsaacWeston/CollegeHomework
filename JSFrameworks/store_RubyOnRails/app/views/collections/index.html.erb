@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jewelry Store</h1>
+
+<h3>Contact Information</h3>
+<p class='contact'>
+  123 Imaginary Rd. <br />
+  Radford, VA 24141 <br />
+  (540)-555-5555 <br />
+  manager@jewelrystore.com
+</p>
+
+<h2>Jewel Collections</h2>
+<ul>
+  <% @collections.each do |collection| %>
+    <li><%= link_to collection.name, collection %></li>
+  <% end %>
+</ul>

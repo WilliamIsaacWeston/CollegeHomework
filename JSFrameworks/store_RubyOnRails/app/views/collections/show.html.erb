@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @collection.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jewels.each do |jewel| %>
+      <tr>
+        <td><%= link_to jewel.name, jewel %></td>
+        <td><%= number_to_currency jewel.price %></td>
+        <td><%= jewel.quantity %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'Back', collections_path %>

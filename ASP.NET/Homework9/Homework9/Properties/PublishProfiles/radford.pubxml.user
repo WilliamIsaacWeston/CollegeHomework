@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>Z:\ITEC315\Spring2015\Section01\wweston</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Homework9.dll">
+      <publishTime>04/28/2015 23:28:40</publishTime>
+    </File>
+    <File Include="bin/Homework9.XmlSerializers.dll">
+      <publishTime>04/28/2015 23:28:40</publishTime>
+    </File>
+    <File Include="ChangePassword.aspx">
+      <publishTime>04/21/2015 22:38:45</publishTime>
+    </File>
+    <File Include="Edit.aspx">
+      <publishTime>04/28/2015 23:25:59</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/21/2015 22:02:21</publishTime>
+    </File>
+    <File Include="Main.aspx">
+      <publishTime>04/28/2015 22:01:13</publishTime>
+    </File>
+    <File Include="Transactions.aspx">
+      <publishTime>04/28/2015 13:39:58</publishTime>
+    </File>
+    <File Include="Web References/NRVVref/Member.datasource">
+      <publishTime>04/16/2015 11:26:44</publishTime>
+    </File>
+    <File Include="Web References/NRVVref/Reference.map">
+      <publishTime>04/16/2015 11:26:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/16/2015 12:12:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

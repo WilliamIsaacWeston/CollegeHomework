@@ -1,0 +1,23 @@
+<?php
+error_reporting(E_ALL|E_STRICT);
+ini_set('display_errors', 'stderr');
+ini_set('display_startup_errors', true);
+
+require_once( 'utils.php' );
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <title>Silly Page</title>
+   </head>
+   <body>
+      <p>
+         There are <?=pluralize(5, "hat")?>, for every <?=pluralize(1, "cat")?>,
+         but there are <?=pluralize(2, "mat")?> for every <?=pluralize(6, "rat")?>!
+      </p>
+
+   </body>
+</html>
+

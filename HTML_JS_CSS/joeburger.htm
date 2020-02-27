@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    ITEC225 Assignment 4 
+    This HTML document is an 
+    order form for a fictional 
+    Burger Place
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Joe's Famous Burgers</title>
+    <meta charset="utf-8">
+
+    <!-- The CSS for formatting -->
+    <style type="text/css">
+      body    {margin-left:50px;
+               margin-right:50px;
+               font-size:16pt;
+               font-weight:bold;}
+      h3      {border-style:solid;}
+      th,td   {font-weight:bold;
+               font-size:14pt;
+               padding:0.50em;
+               border-style:solid;
+               border-color:red;
+               border-width:0.2em;
+               background-color:#E0E0E0;}
+      caption {font-weight:bold;
+               padding:0.5em;
+               border-style:solid;
+               border-color:red;
+               border-width:0.2em;
+               background-color:lightblue;}
+      #outp   {background-color:#FFFF66;
+               width:20em;}
+      table   {border-collapse:collapse;
+               border-style:solid;
+               border-color:red;
+               border-width:0.2em;}
+    </style>
+  
+    <!-- The JavaScript functions -->
+    <script type="text/javascript"> 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    </script>
+  </head>
+  <body>   
+    <form action="" method="post">
+      <table>
+        <caption>Joe's Famous Burgers<br>
+              On-line Order Form </caption>
+        <tbody>
+          <tr>
+            <td colspan="3">First Name: &nbsp; 
+              <input type="text" maxlength="10" name="fn" id="fn">
+              (all alphabetics max length 10)
+            </td>
+            <th rowspan="8" id="outp"><h3>Order Details</h3><p id="outar"></p></th>
+          </tr>
+          <tr>
+            <td colspan="3">Phone #: &nbsp; 
+              <input type="text" maxlength="8" name="ph" id="ph">
+                &nbsp;&nbsp;Format: ddd-dddd
+            </td>
+          </tr>
+          <tr>
+            <th colspan="3">
+              Select the size burger you want:<br>
+            </th>   
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="size" id="small" value="2" checked="checked">Single - $2.00
+            </td>
+            <td>
+              <input type="radio" name="size" id="med" value="3">Double - $3.00
+            </td>
+            <td>
+              <input type="radio" name="size" id="large" value="4">Triple - $4.00
+            </td>
+          </tr>
+          <tr>
+            <th colspan="3">
+              Select the toppings for your burger
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="cheese" value="cheese">Cheese ($0.50)
+            </td>
+            <td>
+              <input type="checkbox" id="onions" value="onions">Onions ($0.24)
+            </td>
+            <td>    
+              <input type="checkbox" id="lettuce" value="lettuce">Lettuce (FREE)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="tomatoes" value="tomatoes">Tomatoes ($0.32)
+            </td>
+            <td>                                              
+              <input type="checkbox" id="mustard" value="mustard">Mustard (FREE)
+            </td>
+            <td>
+              <input type="checkbox" id="chili" value="chili">Chili ($0.61)
+            </td>
+          </tr>
+          <tr>
+            <th colspan="3">
+              <input type="button" value="Calculate Order Price">
+              <input type="reset" value="Clear Form">
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

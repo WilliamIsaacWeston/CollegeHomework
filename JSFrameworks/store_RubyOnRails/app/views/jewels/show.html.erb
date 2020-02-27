@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @jewel.name %></h1>
+
+<%= image_tag "" + @jewel.id.to_s + ".jpg" %>
+
+<p>
+  <strong>Description: </strong><%= @jewel.description %><br />
+  <strong>Price:</strong> <%= number_to_currency @jewel.price %><br />
+  <strong>Quantity: </strong><%= @jewel.quantity %>
+</p>
+
+<%= button_to "Buy", buy_jewel_url, data: { confirm: 'Are you sure you wish to purchase this jewel for the listed price?' } %>
+<%= button_to "Sell", sell_jewel_url, data: { confirm: 'Are you sure you wish to sell this jewel for the listed price ?' } %>
+
+<%= link_to 'Back', @jewel.collection %>

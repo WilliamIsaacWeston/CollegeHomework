@@ -1,0 +1,35 @@
+<!ELEMENT movies (movie+)>
+<!ELEMENT movie ((title, site*, poster, release-date, genre+, actor*, director, actor*, runtime, 
+  mpaa*, studio?, reviews*) | (title, site*, poster, release-date, director, genre+, runtime, 
+  actor*, mpaa*, studio?, reviews*) | (title, site*, poster, release-date, genre+, actor*, 
+  director, studio?, mpaa*, runtime, reviews*))>
+<!ELEMENT title (#PCDATA)>
+  <!ATTLIST title lang CDATA #IMPLIED> 
+<!ELEMENT site (#PCDATA)>
+<!ELEMENT poster (#PCDATA)>
+  <!ATTLIST poster src CDATA #REQUIRED>
+<!ELEMENT release-date (year, month, day)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT actor (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT runtime (#PCDATA)>
+<!ELEMENT mpaa (rating, reason+)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT reason (category, duration?)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT studio (#PCDATA | site)*>
+<!ELEMENT reviews (review+)>
+<!ELEMENT review (reviewer, text?, score?)>
+<!ELEMENT reviewer (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT score (#PCDATA)>
+  <!ATTLIST score out-of CDATA #REQUIRED>
+  
+<!ENTITY g "General Audiences">
+<!ENTITY pg "Parental Guidance Suggested">
+<!ENTITY pg13 "Parental Guidance Suggested For Those Under 13 Years of Age">
+<!ENTITY r "Restricted">

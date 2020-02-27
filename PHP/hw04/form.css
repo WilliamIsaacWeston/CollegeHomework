@@ -1,0 +1,31 @@
+/** A set of CSS styles for the form and form handler.
+ * @author Isaac Weston
+ * @version ITEC 325, Fall 2014
+ * @url https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw04.html
+ */
+
+.important {
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  border-color: green;
+}
+
+.reminder {
+  text-align: center;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.error {
+  font-style: italic;
+  color: red;
+}
+
+.submit_by {
+  font-style: italic;
+}
+
+.available_to {
+  font-style: bold;
+}

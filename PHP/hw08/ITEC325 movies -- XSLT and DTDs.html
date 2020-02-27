@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+<!-- saved from url=(0077)https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ITEC325 movies -- XSLT and DTDs</title>
+
+<script src="./ITEC325 movies -- XSLT and DTDs_files/ixml-scripts.js" type="text/javascript" language="javascript"> </script>
+<link href="./ITEC325 movies -- XSLT and DTDs_files/standard-ixml.css" rel="stylesheet" type="text/css">
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+</head>
+
+
+
+<body>
+<table border="0" cellpadding="2" cellspacing="0">
+  <tbody><tr><td><a href="http://www.radford.edu/"><img src="./ITEC325 movies -- XSLT and DTDs_files/RUseal_sm.jpg" alt="RU beehive logo" height="70"></a></td>
+<td><a href="http://www.radford.edu/~itec"><img src="./ITEC325 movies -- XSLT and DTDs_files/itec-banner-fountain.jpg" alt="ITEC dept promo banner" height="70"></a></td>
+<td><table border="0" cellpadding="2" cellspacing="0"><tbody><tr><td align="center"><a href="https://php.radford.edu/~itec325/">ITEC 325</a></td></tr><tr><td align="center"><a href="https://php.radford.edu/~itec325/2014fall">2014fall</a></td></tr><tr><td align="center"><small><a href="https://php.radford.edu/~itec325/2014fall-ibarland">ibarland</a></small></td></tr></tbody></table>
+</td></tr></tbody></table>
+
+
+
+<p align="center"><font size="2" color="black" face="Helvetica"><a href="https://php.radford.edu/~itec325/2014fall-ibarland/">home</a>—<a href="https://php.radford.edu/~itec325/2014fall-ibarland/Lectures">lects</a>—<a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks">hws</a><br><a href="https://learn.radford.edu/d2l/home/64201">D2L</a>—<a href="http://breeze.radford.edu/ibarland">breeze (snow day)</a></font></p>
+
+<script type="text/javascript" language="javascript">
+
+</script>
+
+
+<h1 align="center">
+<font size="-1">movies</font><br>
+XSLT and DTDs<br><font size="-1">a movie encyclopedia</font>
+</h1>
+
+
+
+
+
+
+<p class="additional-info">
+Due: 2014.Dec.11 (Thu) 16:59
+</p>
+
+<p>
+We will work with an XML-encoded database of information
+about movies, <a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies.xml">movies.xml</a>.
+(And, here is a sample/starter <a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies.xsl">movies.xsl</a>.)
+Submit your files on D2L, 
+with the names “<kbd>movies.xml</kbd>” and “<kbd>movies.xsl</kbd>”
+(and, if a separate file, “<kbd>movies.dtd</kbd>”).
+</p>
+
+
+
+
+<ol type="1">
+  <li>(5pts)
+    Add one more movie to the file.
+  </li>
+
+  <li>(20pts)
+   Create an XSLT template
+   which generates a page with a summary of each movie,
+   looking similar to <a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies-goal.html" target="hw-goal">movies-goal.html</a>
+   (you are encouraged to view-source).
+
+   <p>
+     </p><ul>
+       <li>Feel free to make your page look nicer than that demo.
+       </li>
+
+       <li>(2pts extra-credit)
+         Have your review-summary-score should be a <em>link</em>
+         to a page whose URL is (say)
+         <kbd>full-reviews.xml#Birdman</kbd>;
+         <em>this link does not actually have to be a valid link</em>;
+         I just want to see that you know how to add attributes to a tag.
+         <br>
+         (For an additional 2pts extra-credit,
+         use <nobr class="code-inline"><tt>translate</tt></nobr> to convert 
+         spaces to hyphens,
+         and certain black-listed characters that don't belong in URLs
+         into safe characters (<i>e.g.</i> underscores).)
+       </li>
+       
+       <li>
+         (2pts extra-credit)
+         Note that if the language is English, or there is no <nobr class="code-inline"><tt>language</tt></nobr> tag,
+         you won't list the movies languages at all.
+         Similarly, if there is no rating given, list as "Rating: Unrated".
+         Finally, if there is no studio, omit the “by” clause next to the date.
+         <br>
+         Hint: remember the <nobr class="code-inline"><tt>count</tt></nobr> function.
+       </li>
+       <li>
+         2pts extra-credit for listing the actors (<i>etc.</i>) without
+         a trailing comma, and including the word “and” before the last item.
+         (Cf. the list of names of the wonders, with commas.)
+       </li>
+       <li>
+         2pts extra-credit for not having an “s” at the end 
+         of  “Genre:”
+         when there is only one genre for the movie.
+       </li>
+     </ul>
+   <p></p>
+  </li>
+
+
+
+  <li>(5pts)
+    Have your list sorted by 
+    release-year, in reverse order (most recent first).
+
+    <p>
+    (2pts extra-credit:
+    If you want, 
+    you can use nested <nobr class="code-inline"><tt>xsl:sort</tt></nobr> tags to
+    sort by year-month-day<a name="back1"></a><a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies.html#foot1"><sup><font size="-2">1</font></sup></a>.
+    Re-arrange the games in the source-file in such an order 
+    as to confirm that this sorting works.)
+    </p>
+  </li>
+
+
+  
+  <li>(15pts)
+    Generate a DTD for the grammar
+    (You can have the DTD either in-line in your <tt>xml</tt> file, or as an external file.)
+    Validate the file, using the validator such as the one at 
+    <a href="http://www.xmlvalidation.com/" target="other">http://www.xmlvalidation.com/</a>.
+
+    <p>
+      Your DTD must match the three provided movies.
+      Use your best judgement about whether a field that occurs in all three
+      is required, or optional, or allowed to have multiple entries.
+    </p>
+    
+    <p>
+    If you include the DTD in-line,
+    enclose all your 
+    <nobr class="code-inline"><tt>&lt;!ELEMENT<i><font color="olive">…</font></i>&gt;</tt></nobr>
+    and
+    <nobr class="code-inline"><tt>&lt;!ATTLIST<i><font color="olive">…</font></i>&gt;</tt></nobr>
+    information inside a single, enclosing
+    <nobr class="code-inline"><tt>&lt;!DOCTYPE games [ <i><font color="olive">…</font></i> ]&gt;</tt></nobr>:
+    <!-- nolink src="http://www.validome.org/grammar/" target="other">http://www.validome.org/grammar/</nolink -->.
+    </p><table class="code-block"><tbody><tr><td><pre>&lt;?xml <i><font color="olive">…</font></i> ?&gt;
+&lt;!DOCTYPE ancient_wonders [
+  &lt;!ELEMENT wonders (wonder*)&gt;
+  &lt;!ELEMENT wonder <i><font color="olive">…</font></i>&gt;
+  &lt;!ATTLIST name
+    lang <i><font color="olive">…</font></i>&gt;
+  ⋮
+]&gt;
+</pre></td></tr></tbody></table>
+    <p></p>
+  </li>
+
+  <li>(5pts)
+    Define entities<a name="back2"></a><a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies.html#foot2"><sup><font size="-2">2</font></sup></a> <nobr class="code-inline"><tt>&amp;ps3;</tt></nobr>, 
+    <nobr class="code-inline"><tt>&amp;wiiU;</tt></nobr>, <nobr class="code-inline"><tt>&amp;xbox1;</tt></nobr>, <i>etc.</i>
+  </li>
+
+
+</ol>
+
+
+
+
+
+
+<p>Tips:
+</p><ul>
+  <li>
+    Work incrementally.
+  </li>
+  
+  <li>
+    Getting no output at all?
+    Make sure your xsl tags are all properly closed.
+  </li>
+  <li>
+    When using an <nobr class="code-inline"><tt>xsl:attribute</tt></nobr> tag,
+    don't include any extra whitespace in the body;
+    this gets turned into whitespace in the attribute which is presumably
+    not what you want.
+  </li>
+</ul>
+<p></p>
+
+
+
+
+
+<hr>
+<font size="-1"><p><a name="foot1"><sup><font size="-2">1</font></sup></a>This is actually following a standard CS trick:
+    If you <em>first</em> sort by month and <em>then</em> by year,
+    you'll get what you want as long as the sorting algorithm
+    is 
+    “<a href="http://en.wikipedia.org/wiki/Stable_sort#Stability">stable</a>”
+    — that is,
+    it leaves tied elements in the same relative order they started in.
+    It makes sense: after the first sort on months,
+    all the Januaries come before all the Februaries.
+    When you now sort by year, and two games are tied for year,
+    the January one will stay ahead of the February one, in a stable sort.
+          <a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies.html#back1" id="1">↩</a></p><p><a name="foot2"><sup><font size="-2">2</font></sup></a>Okay okay,
+    if you get technical, the “<kbd>&amp;</kbd>” and
+    “<kbd>;</kbd>” aren't <em>part</em> of the entity.
+    Still, you know what I mean.
+    The ampersand and semicolon are part of how you denote an entity-literal.
+    Similarly, in programming languages, quotes aren't part of the string but just
+    how you denote what the string-literal is.
+          <a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks/hw08/movies.html#back2" id="2">↩</a></p></font>
+<p align="center"><font size="2" color="black" face="Helvetica"><a href="https://php.radford.edu/~itec325/2014fall-ibarland/">home</a>—<a href="https://php.radford.edu/~itec325/2014fall-ibarland/Lectures">lects</a>—<a href="https://php.radford.edu/~itec325/2014fall-ibarland/Homeworks">hws</a><br><a href="https://learn.radford.edu/d2l/home/64201">D2L</a>—<a href="http://breeze.radford.edu/ibarland">breeze (snow day)</a></font></p>
+
+<script type="text/javascript" language="javascript">
+
+</script>
+
+
+
+<hr>
+<table width="100%" border="0" cellpadding="2" cellspacing="0">
+  <tbody><tr valign="top">
+    <td align="left" width="30%"><small>©2014, <a href="http://www.radford.edu/~ibarland/">Ian Barland</a>, <a href="http://www.radford.edu/">Radford University</a><br>Last modified <a href="http://www.radford.edu/~ibarland/Manifestoes/dateFormat.shtml">2014.Dec.01 (Mon)</a></small></td>
+    <td align="center"><small>Please mail any suggestions<br> (incl. typos, broken links) <br>to <tt>ibarland<img src="./ITEC325 movies -- XSLT and DTDs_files/monkey-tail.png" height="13" valign="bottom">radford.edu</tt></small></td>
+    <td align="right" width="100"><a href="http://racket-lang.org/"><img src="./ITEC325 movies -- XSLT and DTDs_files/rendered-by-racket.png" alt="Rendered by Racket." height="30px"></a></td>
+    </tr></tbody></table>
+</body></html>

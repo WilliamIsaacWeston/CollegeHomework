@@ -1,0 +1,8 @@
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\bin\Homework9.dll.config
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\bin\Homework9.dll
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\bin\Homework9.XmlSerializers.dll
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\bin\Homework9.pdb
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\obj\Release\Homework9.dll
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\obj\Release\Homework9.pdb
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\obj\Release\Homework9.XmlSerializers.dll
+C:\Users\Isaac\Documents\Visual Studio 2013\Projects\Homework9\Homework9\obj\Release\Homework9.csprojResolveAssemblyReference.cache

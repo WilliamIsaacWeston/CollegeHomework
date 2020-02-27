@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://itec-web-dev02.radford.edu/fds/NRVVService.asmx?wsdl" docRef="http://itec-web-dev02.radford.edu/fds/NRVVService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://itec-web-dev02.radford.edu/fds/NRVVService.asmx" xmlns:q1="http://www.radford.edu/NRVV" binding="q1:NRVVserviceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://itec-web-dev02.radford.edu/fds/NRVVService.asmx" xmlns:q2="http://www.radford.edu/NRVV" binding="q2:NRVVserviceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

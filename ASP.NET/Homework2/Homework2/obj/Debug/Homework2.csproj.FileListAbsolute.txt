@@ -1,0 +1,9 @@
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\bin\Debug\Homework2.exe.config
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\bin\Debug\Homework2.exe
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\bin\Debug\Homework2.pdb
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\obj\Debug\Homework2.csprojResolveAssemblyReference.cache
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\obj\Debug\Homework2.FormMainWindow.resources
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\obj\Debug\Homework2.Properties.Resources.resources
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\obj\Debug\Homework2.csproj.GenerateResource.Cache
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\obj\Debug\Homework2.exe
+c:\users\isaac\documents\visual studio 2013\Projects\Homework2\Homework2\obj\Debug\Homework2.pdb
